@@ -7,7 +7,9 @@ package com.eduardordguez.creational.factorymethod;
 public interface Knife {
 
   void sharpen();
+
   void polish();
+
   void pack();
 
 }

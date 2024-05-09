@@ -8,6 +8,7 @@ public class BudgetKnifeStore extends KnifeStore {
 
   /**
    * Method that returns the `concrete product`.
+   *
    * @param knifeType {@link String}
    * @return {@link Knife} type object.
    */

@@ -7,6 +7,7 @@ public abstract class KnifeStore {
 
   /**
    * Method that work with the created objects.
+   *
    * @param knifeType {@link String}
    * @return {@link Knife} type object.
    */
@@ -20,6 +21,7 @@ public abstract class KnifeStore {
 
   /**
    * Method that serves as a factory for creating objects.
+   *
    * @param knifeType {@link String}
    * @return {@link Knife} type object.
    */
