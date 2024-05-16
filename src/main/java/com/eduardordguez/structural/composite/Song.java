@@ -1,6 +1,10 @@
 package com.eduardordguez.structural.composite;
 
-public class Song implements IComponent {
+/**
+ * The `Leaf` component defines the behaviour for the elements in the composition. It is the
+ * building block for the composition and implements base component.
+ */
+public class Song implements Media {
 
   private final String songName;
   private final String artist;
@@ -13,7 +17,7 @@ public class Song implements IComponent {
 
   @Override
   public void play() {
-    System.out.println("Song: " + songName + " Artist: " + artist);
+    // do something
   }
 
   @Override

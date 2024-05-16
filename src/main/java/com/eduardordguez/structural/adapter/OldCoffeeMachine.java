@@ -1,4 +1,4 @@
-package com.eduardordguez.structural.facademethod;
+package com.eduardordguez.structural.adapter;
 
 /**
  * `Subsystem class` are the classes that implement the functionality required by the client.

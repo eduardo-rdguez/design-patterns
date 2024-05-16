@@ -1,6 +1,9 @@
 package com.eduardordguez.structural.composite;
 
-public interface IComponent {
+/**
+ * The `Component` declares the common methods for the leaf and composites.
+ */
+public interface Media {
 
   void play();
 

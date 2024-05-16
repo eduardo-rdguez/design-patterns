@@ -2,10 +2,14 @@ package com.eduardordguez.structural.composite;
 
 import java.util.ArrayList;
 
-public class Playlist implements IComponent {
+/**
+ * The `Composite` component stores child components and implements the methods declared in the
+ * component interface.
+ */
+public class Playlist implements Media {
 
   private final String playlistName;
-  private final ArrayList<IComponent> playlist = new ArrayList<>();
+  private final ArrayList<Media> playlist = new ArrayList<>();
 
   public Playlist(String playlistName) {
     this.playlistName = playlistName;
@@ -13,7 +17,7 @@ public class Playlist implements IComponent {
 
   @Override
   public void play() {
-    playlist.forEach(IComponent::play);
+    playlist.forEach(Media::play);
   }
 
   @Override
@@ -26,11 +30,11 @@ public class Playlist implements IComponent {
     return this.playlistName;
   }
 
-  public void add(IComponent component) {
+  public void add(Media component) {
     this.playlist.add(component);
   }
 
-  public void remove(IComponent component) {
+  public void remove(Media component) {
     this.playlist.remove(component);
   }
 

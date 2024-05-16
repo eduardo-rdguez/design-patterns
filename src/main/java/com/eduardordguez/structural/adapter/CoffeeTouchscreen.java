@@ -1,4 +1,4 @@
-package com.eduardordguez.structural.facademethod;
+package com.eduardordguez.structural.adapter;
 
 /**
  * `Facade Method` provides a unified interface to a set of interfaces in a subsystem. It
