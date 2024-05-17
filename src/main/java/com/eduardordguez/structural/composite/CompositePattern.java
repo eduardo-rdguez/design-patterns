@@ -1,11 +1,11 @@
 package com.eduardordguez.structural.composite;
 
-public class App {
+public class CompositePattern {
 
   private static final float SLOW_SPEED = 0.5f;
   private static final float FASTER_SPEED = 1.25f;
 
-  public void start() {
+  public static void main(String[] args) {
     Playlist studyPlaylist = new Playlist("study");
     Playlist indiePlaylist = new Playlist("indie");
     Playlist experimentalPlaylist = new Playlist("experimental");
