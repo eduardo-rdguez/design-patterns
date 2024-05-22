@@ -7,21 +7,12 @@ import java.util.ArrayList;
  */
 public class Channel implements Subject {
 
-  private ArrayList<Observer> observers;
+  private final ArrayList<Observer> observers;
   private String channelName;
-  private String status;
 
-  public Channel(String channelName, String status) {
+  public Channel(String channelName) {
     this.channelName = channelName;
-    this.status = status;
-  }
-
-  public String getStatus() {
-    return status;
-  }
-
-  public void setStatus(String status) {
-    this.status = status;
+    this.observers = new ArrayList<>();
   }
 
   @Override
@@ -31,12 +22,12 @@ public class Channel implements Subject {
 
   @Override
   public void removeObserver(Observer observer) {
-    observers.add(observer);
+    observers.remove(observer);
   }
 
   @Override
   public void notifyObservers() {
-    observers.forEach(observer -> observer.update(status));
+    observers.forEach(observer -> observer.update(channelName));
   }
 
   public String getChannelName() {

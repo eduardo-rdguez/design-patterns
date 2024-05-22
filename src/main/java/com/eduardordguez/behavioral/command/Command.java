@@ -6,16 +6,6 @@ package com.eduardordguez.behavioral.command;
  */
 public abstract class Command {
 
-  private boolean isExecute;
-
   public abstract void execute();
-
-  public boolean isExecuted() {
-    return isExecute;
-  }
-
-  public void setIsExecute(boolean isExecute) {
-    this.isExecute = isExecute;
-  }
 
 }

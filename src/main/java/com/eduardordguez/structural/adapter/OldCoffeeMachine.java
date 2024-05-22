@@ -6,11 +6,11 @@ package com.eduardordguez.structural.adapter;
 public class OldCoffeeMachine {
 
   void selectA() {
-    // do something
+    System.out.println("Selecting Coffee A");
   }
 
   void selectB() {
-    // do something
+    System.out.println("Selecting Coffee B");
   }
 
 }

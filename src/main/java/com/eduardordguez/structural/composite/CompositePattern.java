@@ -1,5 +1,9 @@
 package com.eduardordguez.structural.composite;
 
+/**
+ * `Composite` is a structural design pattern that lets you compose objects into tree
+ * structures and then work with these structures as if they were individual objects.
+ */
 public class CompositePattern {
 
   private static final float SLOW_SPEED = 0.5f;

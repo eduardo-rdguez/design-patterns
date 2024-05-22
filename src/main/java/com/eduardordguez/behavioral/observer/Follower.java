@@ -12,12 +12,8 @@ public class Follower implements Observer {
   }
 
   @Override
-  public void update(String status) {
-    // do something
-  }
-
-  public void play() {
-    // do something
+  public void update(String channel) {
+    System.out.println("New " + channel + " updates -> " + followerName);
   }
 
   public String getFollowerName() {
