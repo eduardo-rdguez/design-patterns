@@ -23,7 +23,7 @@ public class Circle extends Shape {
 
   public void setRadius(float radius) {
     if (radius < 0) {
-      throw new IllegalArgumentException("Ratio must be greater than or equal to 0");
+      throw new IllegalArgumentException("Radius must be greater than or equal to 0");
     }
     this.radius = radius;
   }
