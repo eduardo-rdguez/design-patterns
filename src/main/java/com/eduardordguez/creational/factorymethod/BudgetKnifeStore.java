@@ -9,14 +9,14 @@ public class BudgetKnifeStore extends KnifeStore {
   /**
    * Method that returns the `concrete product`.
    *
-   * @param knifeType {@link String}
+   * @param knifeType {@link KnifeType}
    * @return {@link Knife} type object.
    */
   @Override
-  public Knife createKnife(String knifeType) {
+  public Knife createKnife(KnifeType knifeType) {
     return switch (knifeType) {
-      case "Steak" -> new BudgetSteakKnife();
-      case "Bread" -> new BudgetBreadKnife();
+      case STEAK -> new BudgetSteakKnife();
+      case BREAD -> new BudgetBreadKnife();
       default -> new BudgetChefKnife();
     };
   }

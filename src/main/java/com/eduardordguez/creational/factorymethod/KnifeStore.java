@@ -8,23 +8,21 @@ public abstract class KnifeStore {
   /**
    * Method that work with the created objects.
    *
-   * @param knifeType {@link String}
-   * @return {@link Knife} type object.
+   * @param knifeType {@link KnifeType}
    */
-  public Knife orderKnife(String knifeType) {
+  public void orderKnife(KnifeType knifeType) {
     Knife knife = createKnife(knifeType);
     knife.sharpen();
     knife.polish();
     knife.pack();
-    return knife;
   }
 
   /**
    * Method that serves as a factory for creating objects.
    *
-   * @param knifeType {@link String}
+   * @param knifeType {@link KnifeType}
    * @return {@link Knife} type object.
    */
-  abstract Knife createKnife(String knifeType);
+  abstract Knife createKnife(KnifeType knifeType);
 
 }

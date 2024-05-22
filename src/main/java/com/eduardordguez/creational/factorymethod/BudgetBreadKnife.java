@@ -8,17 +8,17 @@ public class BudgetBreadKnife implements Knife {
 
   @Override
   public void sharpen() {
-
+    System.out.println("Sharpening bread knife");
   }
 
   @Override
   public void polish() {
-
+    System.out.println("Polishing bread knife");
   }
 
   @Override
   public void pack() {
-
+    System.out.println("Packing bread knife");
   }
 
 }
