@@ -1,9 +1,8 @@
 package com.eduardordguez.structural.adapter;
 
 /**
- * `Facade Method` provides a unified interface to a set of interfaces in a subsystem. It
- * simplifies the usage of the subsystem by providing a higher-level interface. Clients interact
- * with the facade rather than directly with the subsystem components.
+ * The `CoffeeTouchscreen` adapter class implements the target interface and internally uses an
+ * instance of the adaptee to make it compatible with the target interface.
  */
 public class CoffeeTouchscreen implements CoffeeMachine {
 
