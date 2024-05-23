@@ -3,7 +3,7 @@ package com.eduardordguez.solid.openclose;
 import java.math.BigDecimal;
 
 /**
- * `Open-Close` principle states that software entities (classes, modules, functions, and so on)
+ * The `Open-Close` principle states that software entities (classes, modules, functions, and so on)
  * should be open for extension, but closed for modification.
  */
 public class OpenClosePrinciple {
